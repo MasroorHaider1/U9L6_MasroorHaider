@@ -36,13 +36,13 @@ def main():
     # Set boolean (True if Teacher, False otherwise)
     isTeacher = (choice == '1')
 
-    # Get ID (basic if-else, no .strip())
+    # Get ID
     if isTeacher:
         id_input = input("Enter your Teacher ID: ")
     else:
         id_input = input("Enter your Student ID: ")
 
-    # Fetch schedule
+    # get schedule
     connection = establish_connection()
 
     if isTeacher:
